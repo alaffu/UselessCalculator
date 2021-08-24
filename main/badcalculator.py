@@ -6,17 +6,17 @@ print("Welcome to the most useless calculator in the world :)")
 
 def find_calculator():
     """will find where the calculator is in the screen"""
-    position = pyautogui.locateOnScreen("calculator.png", confidence=0.95)
+    position = pyautogui.locateOnScreen("assets/calculator.png", confidence=0.95)
     return position
 
 
 def locate_numbers(*numbers):
     """it locates the numbers in the calculator"""
     position = []
-    img = "nx.png"
+    img = "assets/nx.png"
     here = find_calculator()
     for i in numbers:
-        img = "n{}.png".format(i)
+        img = "assets/n{}.png".format(i)
         position = pyautogui.locateOnScreen(img,
                                             confidence=0.95,
                                             grayscale=True,
@@ -48,7 +48,7 @@ def write_numbers(numbers):
 
 def clear_all():
     """will clear everything written in the calculator"""
-    position = pyautogui.locateOnScreen("nC.png", confidence=0.95)
+    position = pyautogui.locateOnScreen("assets/nC.png", confidence=0.95)
     pyautogui.moveTo(position)
     pyautogui.click()
     go_back()
