@@ -5,5 +5,5 @@ interactions with other applications.](https://pyautogui.readthedocs.io/en/lates
 
 ## What it does
 You need to take screenshots of each number of the calculator app and name it
-nx for x number, and then open the calculator. Then you just run the script, type
-all numbers you want to type in the calculator and then hopefully the magic will happen.
+nx for x number, and then open the calculator. Done that you just run the script, type
+all numbers you want to type in the calculator and hopefully the magic will happen.
